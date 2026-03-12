@@ -2,7 +2,7 @@ import 'dart:typed_data';
 
 import '../api/response.dart';
 
-abstract interface class IApiRequests {
+abstract interface class IHttpClient {
   
   Future<ApiResponse<T?>> get<T>({
     required String endpoint,
