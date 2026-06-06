@@ -287,3 +287,8 @@ extension Sized on num {
 
   bool get hasValue => this > 0;
 }
+extension TimeOfDayParser on TimeOfDay {
+  String get parseToString {
+    return "${hour.toString().padLeft(2, '0')}:${minute.toString().padLeft(2, '0')}";
+  }
+}
